@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+$white:white;
+$black: black;
+$blue: blue;
+$red:red;
+$green:#00ff00;
+$yellow: yellow;
+$dark-blue:#000066;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background:
+        linear-gradient($red, transparent),
+        linear-gradient(to top left, $green, transparent),
+        linear-gradient(to top right, $blue, transparent);
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    height:100vh;
+    position: relative;
+}
+
+.calc{
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: right;
+    @media (max-width:550px) {
+        display: flex;
+    justify-content: left;
+       }
+    .button{
+        display: flex;
+        justify-content: end;
+        .btn{
+            padding: 20px;
+            button{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+            }
+        }
+        .btn-color{
+            padding: 20px;
+            .drop{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                justify-self: flex-end;
+                text-align: right;
+                p{
+                    position: relative;
+                    background: $white;
+                    padding:5px 20px;
+                    border-radius: 50px;
+                    width: 100px;
+                }
+                i{
+                    position: absolute;
+                    padding-left: 14px;
+                }
+            }
+            .themes{
+                display: none;
+                padding: 20px;
+                .flex{
+                    display: flex;
+                    align-items: center;
+                    
+                }
+                #flexRed{
+                    h2:hover{
+                        color: $red;
+                    }
+                }
+                #flexYellow{
+                    h2:hover{
+                        color: $yellow;
+                    }
+                }
+                #flexBlue{
+                    h2:hover{
+                        color: $blue;
+                    }
+                }
+                h2{
+                    font-size: 20px;
+                }
+                button{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    display: block;
+                    margin: 5px;
+                    border: none;
+                }
+                #btnRed{
+                    background-color: $red;
+                }
+                #btnGreen{
+                    background-color: $yellow;
+                }
+                #btnYellow{
+                    background-color: $dark-blue;
+                }
+            }
+        }
+    }
+    
+    .calculator{
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        display: grid;
+        place-items: center;
+        background: $white;
+        border-radius: 20px;
+        width: 350px;
+        height: 450px;
+        position: absolute;
+        top: 80px;
+        left: 35%;
+        @media (max-width:950px) {
+            top: 100px;
+            left: 30%;
+           }
+       @media (max-width:895px) {
+        top: 100px;
+        left: 30%;
+       }
+       @media (max-width:750px) {
+        top: 100px;
+        left: 20%;
+       }
+       @media (max-width:650px) {
+        top: 100px;
+        left: 10%;
+       }
+       @media (max-width:550px) {
+        top: 130px;
+        left: 20%;
+       }
+       @media (max-width:500px) {
+        top: 130px;
+        left: 10%;
+       }
+       @media (max-width:410px) {
+        top: 130px;
+        left: 1%;
+       }
+
+        .input{
+            input{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                padding: 10px;
+                width: 250px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 20px;
+            }
+        }
+        .rows{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            input{
+            font-family: 'Quicksand', sans-serif;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                transition: all 0.4s;
+                &:hover{
+                    color: $black;
+                    background-color: $white;
+                    transform: scale(1.2);
+                    box-shadow: 0px .5px 10px 2px $white
+                }
+            }
+        }
+    }
+    
+    
+}
