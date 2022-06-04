@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/suganya.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="theme_section">
+      <div class="dark_mode">
+        <button onclick="active()">
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+      </div>
+
+      <div class="theme_list">
+        <h4 onclick="drop()">
+          Theme Switcher <i class="fa-solid fa-caret-down"></i>
+        </h4>
+      </div>
+      <div id="drop_down" class="theme_changer">
+        <button id="color_red"></button>
+        <button id="color_green"></button>
+        <button id="color_yellow"></button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <input type="text" placeholder="0" />
+      </div>
+      <div class="calculator" id="btn">
+        <div class="cal_one">
+          <button id="btnColor">sinh<sup>-1</sup></button>
+          <button id="btnColor">sin<sup>-1</sup></button>
+          <button id="btnColor">sinh</button>
+          <button id="btnColor">sin</button>
+          <button id="btnColor">&radic;</button>
+          <button id="btnColor">cosh<sup>-1</sup></button>
+          <button id="btnColor">cos<sup>-1</sup></button>
+          <button id="btnColor">cosh</button>
+          <button id="btnColor">cos</button>
+          <button id="btnColor">&#8731;</button>
+          <button id="btnColor">tanh<sup>-1</sup></button>
+          <button id="btnColor">tan<sup>-1</sup></button>
+          <button id="btnColor">tanh</button>
+          <button id="btnColor">tan</button>
+          <button id="btnColor">&#8732;</button>
+          <button id="btnColor">mc</button>
+          <button id="btnColor">m&#43;</button>
+          <button id="btnColor">m&#8722;</button>
+          <button id="btnColor">mr</button>
+          <button id="btnColor">x<sup>2</sup></button>
+          <button id="btnColor">x<sup>3</sup></button>
+          <button id="btnColor">log<sub>10</sub></button>
+          <button id="btnColor">Rand</button>
+          <button id="btnColor">In</button>
+          <button id="btnColor">1/x</button>
+        </div>
+        <div class="cal_two">
+          <button id="colorBtn" class="cal_clr">C</button>
+          <button id="colorBtn" class="cal_clr">DEL</button>
+          <button id="colorBtn" class="cal_clr">&#37;</button>
+          <button id="colorBtn" class="cal_clr">&#247;</button>
+          <button id="btnColor">7</button>
+          <button id="btnColor">8</button>
+          <button id="btnColor">9</button>
+          <button id="colorBtn" class="cal_clr">&#215;</button>
+          <button id="btnColor">4</button>
+          <button id="btnColor">5</button>
+          <button id="btnColor">6</button>
+          <button id="colorBtn" class="cal_clr">&#8722;</button>
+          <button id="btnColor">1</button>
+          <button id="btnColor">2</button>
+          <button id="btnColor">3</button>
+          <button id="colorBtn" class="cal_clr">&#43;</button>
+          <button id="btnColor">00</button>
+          <button id="btnColor">0</button>
+          <button id="btnColor">&#8226;</button>
+          <button id="colorBtn" class="cal_clr">&#61;</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="suganya.js"></script>
+</html>
