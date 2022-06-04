@@ -11,6 +11,7 @@ coloricon.addEventListener("click", () =>{
 
 let mode = document.querySelector(".toggle");
  mode.addEventListener("click",() =>{
+     document.body.classList.remove("green","orange","sandal","blue")
      document.body.classList.toggle("dark")
     
     if (document.body.classList.contains("dark")){
