@@ -10,13 +10,13 @@ body {
 }
 
 #color_red {
-  background: linear-gradient(-45deg, #21d4fd, #b721ff);
+  background: #21d4fd;
 }
 #color_green {
-  background: linear-gradient(-45deg, #08f576, #d4ed0e);
+  background: #d4ed0e;
 }
 #color_yellow {
-  background: linear-gradient(-45deg, #2bd2ff, #2bff88);
+  background: #2bff88;
 }
 .theme_section {
   display: flex;
@@ -38,7 +38,7 @@ body {
     }
   }
   .theme_list {
-    color: #b721ff;
+    color: #bc0f0f;
     border-radius: 20px;
     padding: 5px;
     cursor: pointer;
@@ -49,6 +49,7 @@ body {
   }
   .theme_changer {
     margin-left: 15px;
+    display: none;
 
     button {
       border: none;

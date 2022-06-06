@@ -1,9 +1,16 @@
+// Author: suganya
+// Project-start-date: 02/06/2022
+// Project-end-date: 04/06/2022
+
+// dark mode js
+
 let color = ["black", "wheat"];
 let i = 0;
 document.querySelector("button").addEventListener("click", function () {
   i = i < color.length ? ++i : 0;
   document.querySelector("body").style.background = color[i];
 });
+// red clr theme code
 
 let red = document
   .getElementById("color_red")
@@ -18,6 +25,9 @@ let red = document
       bgclr[i].style.background = "#b721ff";
     }
   });
+
+// green clr theme code
+
 let green = document
   .getElementById("color_green")
   .addEventListener("click", function () {
@@ -33,6 +43,8 @@ let green = document
     }
   });
 
+// yellow clr theme code
+
 let yellow = document
   .getElementById("color_yellow")
   .addEventListener("click", function () {
@@ -47,6 +59,8 @@ let yellow = document
       }
     }
   });
+
+// drop down js
 
 drop = () => {
   let drop = document.getElementById("drop_down");
