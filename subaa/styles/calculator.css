@@ -129,11 +129,11 @@ body {
   background-color: red;
 }
 
-.calc .button .btn-color .themes #btnGreen {
+.calc .button .btn-color .themes #btnYellow {
   background-color: yellow;
 }
 
-.calc .button .btn-color .themes #btnYellow {
+.calc .button .btn-color .themes #btnBlue {
   background-color: #000066;
 }
 
@@ -236,4 +236,4 @@ body {
   -webkit-box-shadow: 0px 0.5px 10px 2px white;
           box-shadow: 0px 0.5px 10px 2px white;
 }
-/*# sourceMappingURL=subaa.css.map */
+/*# sourceMappingURL=calculator.css.map */
