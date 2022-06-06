@@ -9,42 +9,42 @@
 
 body.dark {
   --white: #fff;
-  --black:black;
+  --black: black;
   --backgroung-color: black;
-  --button-colour:grey;
-  --color-button:black;
+  --button-colour: grey;
+  --color-button: black;
 }
 
 body.orange {
   --white: #fff;
-  --black:black;
+  --black: black;
   --backgroung-color: #ba5536;
-  --button-colour:#a43820;
-  --color-button:#46211a;
+  --button-colour: #a43820;
+  --color-button: #46211a;
 }
 
 body.sandal {
   --white: #fff;
-  --black:black;
+  --black: black;
   --backgroung-color: #f4cc70;
-  --button-colour:#de7a22;
-  --color-button:#20948b;
+  --button-colour: #de7a22;
+  --color-button: #20948b;
 }
 
 body.green {
   --white: #fff;
-  --black:black;
-  --backgroung-color: #66a5ad ;
-  --button-colour:#07575b;
-  --color-button:#003b46;
+  --black: black;
+  --backgroung-color: #66a5ad;
+  --button-colour: #07575b;
+  --color-button: #003b46;
 }
 
 body {
   --white: #fff;
-  --black:black;
+  --black: black;
   --backgroung-color: #79a7d3;
-  --button-colour:#6883bc;
-  --color-button:#8a307f;
+  --button-colour: #6883bc;
+  --color-button: #8a307f;
 }
 
 header {
@@ -339,8 +339,8 @@ h2 {
   cursor: pointer;
   background-color: var(--button-colour);
   color: var(--white);
-  -webkit-box-shadow: 0 0 5px  0 black;
-          box-shadow: 0 0 5px  0 black;
+  -webkit-box-shadow: 0 0 5px 0 black;
+          box-shadow: 0 0 5px 0 black;
   font-size: 18px;
 }
 
