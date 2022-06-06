@@ -1,21 +1,32 @@
+//Author Name : Subaa
+//Project-Start-Date : 02-06-2022
+//Project-End-Date : 04-06-2022
+
+
 const input = document.getElementById("result")
-        
+     
+
+//displaying value in input
 function display(value) {
    input.value += value;
 }
+
+//calculating the input value
 function calculate() {
  input.value = eval(input.value);
 }
 
+//clearing the input value
 clearInput=()=> {
  input.value = ''
 }
 
+//removing number from right one-by-one
 slice=()=>{
     input.value = input.value.slice(0, -1)
 }
 
-
+//function for dark and white mode
 let color = ["white","black"]
 var i = 0;
 document.querySelector("button").addEventListener("click",function(){
@@ -40,7 +51,7 @@ document.querySelector("button").addEventListener("click",function(){
 })
 
 
-
+//function for displaying hidded themes
 colorFun=()=>{
     let col = document.getElementById('themes')
     if (col.style.display === "flex"){
@@ -51,6 +62,7 @@ colorFun=()=>{
     }
 }
 
+//function for clicking red theme
 let red = document.getElementById("flexRed").addEventListener('click',function(){
     document.body.style.background = "radial-gradient(circle, rgba(219,0,0,1) 17%, rgba(60,6,6,1) 100%)"
     document.getElementById("calculator").style.background = " linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(121,9,9,1) 39%, rgba(68,18,18,1) 100%)"
@@ -68,7 +80,9 @@ let red = document.getElementById("flexRed").addEventListener('click',function()
         document.getElementById("result").style.color = "rgb(108,9,9)"
 }
 })
-let green = document.getElementById("flexYellow").addEventListener('click',function(){
+
+//function for clicking Yellow
+let yellow = document.getElementById("flexYellow").addEventListener('click',function(){
     document.body.style.background = "linear-gradient(to top right, #ffff00 28%, #333300 87%)"
     document.getElementById("calculator").style.background = "yellow"
     const hover = document.querySelectorAll("#hover");
@@ -85,7 +99,9 @@ let green = document.getElementById("flexYellow").addEventListener('click',funct
         document.getElementById("result").style.color = "#e4ce04"
 }
 })
-let yellow = document.getElementById("flexBlue").addEventListener('click',function(){
+
+//function for clicking blue themes
+let blue = document.getElementById("flexBlue").addEventListener('click',function(){
     document.body.style.background = "linear-gradient(to bottom left, #00ffcc -27%, #000066 103%)"
     document.getElementById("calculator").style.background = " linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 42%, rgba(0,212,255,1) 100%)"
     const hover = document.querySelectorAll("#hover");
